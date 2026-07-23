@@ -1,3 +1,7 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-}
+document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('dblclick', function (e) {
+    e.preventDefault();
+});
