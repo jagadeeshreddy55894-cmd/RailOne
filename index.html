@@ -7,104 +7,179 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="top-bar">
-            <i class="fa-solid fa-arrow-left"></i>
-            <h2>My Bookings</h2>
+
+    <header class="header">
+
+        <div class="top">
+
+            <div class="back-btn">
+                <span class="material-icons">arrow_back</span>
+            </div>
+
+            <h1>My Bookings</h1>
+
+            <span class="material-icons menu">
+                sort
+            </span>
+
         </div>
 
-        <div class="tabs">
-            <button class="active">Upcoming</button>
-            <button>Completed</button>
-            <button>Cancelled</button>
-        </div>
     </header>
 
-    <!-- Booking Card -->
 
-    <div class="container">
+    <!-- Upcoming -->
 
-        <div class="booking-card">
+    <div class="title-row">
 
-            <div class="bus-name">
-                <h3>Orange Travels</h3>
-                <span>AC Sleeper</span>
-            </div>
+        <h2>Upcoming</h2>
 
-            <hr>
+        <span class="material-icons refresh">
+            refresh
+        </span>
 
-            <div class="journey">
+    </div>
 
-                <div class="from">
-                    <h2>Hyderabad</h2>
-                    <p>10:30 PM</p>
-                </div>
 
-                <div class="line">
-                    <i class="fa-solid fa-bus"></i>
-                </div>
+    <!-- Ticket -->
 
-                <div class="to">
-                    <h2>Bangalore</h2>
-                    <p>07:15 AM</p>
-                </div>
+    <div class="ticket">
 
-            </div>
+        <div class="badge">
+            Unreserved
+        </div>
 
-            <div class="date">
-                Journey Date : <b>25 July 2026</b>
-            </div>
 
-            <div class="seat">
-                Seat : U12
-            </div>
+        <div class="row">
 
-            <div class="price">
-                ₹899
-            </div>
+            <div>
 
-            <div class="buttons">
+                <p class="label">
+                    Train No.
+                </p>
 
-                <button class="book-btn">
-                    Book Again
-                </button>
-
-                <button class="details-btn"
-                    onclick="window.location.href='details.html'">
-                    View Details
-                </button>
+                <h3>
+                    11905 (Hoshiarpur Exp)
+                </h3>
 
             </div>
+
+            <div class="right">
+
+                <p class="label">
+                    Journey Date
+                </p>
+
+                <h3>
+                    Thu, 23 Jul 26
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="row station">
+
+            <div>
+
+                <h2>
+                    AGRA CANTT JN.
+                </h2>
+
+            </div>
+
+            <div class="right">
+
+                <h2>
+                    Phagwara JN.
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="dotted"></div>
+
+
+        <div class="ticket-cut left"></div>
+
+        <div class="ticket-cut right"></div>
+
+
+        <div class="actions">
+
+            <button class="book-btn">
+
+                Book Again
+
+            </button>
+
+
+            <div class="divider"></div>
+
+
+            <button class="view-btn"
+            onclick="window.location.href='details.html'">
+
+                View Details
+
+            </button>
 
         </div>
 
     </div>
+
 
     <!-- Bottom Navigation -->
 
     <nav>
 
         <div>
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
+
+            <span class="material-icons">
+                confirmation_number
+            </span>
+
+            <p>Upcoming</p>
+
         </div>
 
         <div>
-            <i class="fa-solid fa-ticket"></i>
-            <span>Bookings</span>
+
+            <span class="material-icons">
+                confirmation_number
+            </span>
+
+            <p>Completed</p>
+
         </div>
 
         <div>
-            <i class="fa-solid fa-user"></i>
-            <span>Profile</span>
+
+            <span class="material-icons">
+                confirmation_number
+            </span>
+
+            <p>Cancelled</p>
+
+        </div>
+
+        <div class="active">
+
+            <span class="material-icons">
+                account_balance_wallet
+            </span>
+
+            <p>All</p>
+
         </div>
 
     </nav>
