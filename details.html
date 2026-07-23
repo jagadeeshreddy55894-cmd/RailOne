@@ -30,6 +30,11 @@
 <body>
 
 <img src="fullticket.jpg" alt="Ticket Details">
+    <script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js");
+}
+</script>
 
 </body>
 </html>
