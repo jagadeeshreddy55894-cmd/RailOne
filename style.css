@@ -458,3 +458,44 @@ nav div p{
 }
 
 }
+/* ===========================
+   TICKET IMAGE PAGE
+=========================== */
+
+.ticket-image-page{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+.ticket-image{
+
+    display:block;
+
+    width:100vw;
+
+    height:100vh;
+
+    object-fit:contain;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.ticket-image{
+
+    width:100vw;
+
+    height:100vh;
+
+    object-fit:contain;
+
+}
+
+}
