@@ -1,11 +1,13 @@
 {
   "name": "RailOne",
   "short_name": "RailOne",
-  "start_url": "./",
+  "description": "RailOne Ticket Booking",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "theme_color": "#1565F9",
   "icons": [
     {
       "src": "icon-192.png",
