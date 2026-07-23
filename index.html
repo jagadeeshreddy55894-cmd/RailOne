@@ -2,19 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
 
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-
 <body>
-    <img src="ticket.jpeg" alt="Ticket">
-    <script src="script.js"></script>
 
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2>My Bookings</h2>
+        </div>
+
+        <div class="tabs">
+            <button class="active">Upcoming</button>
+            <button>Completed</button>
+            <button>Cancelled</button>
+        </div>
+    </header>
+
+    <!-- Booking Card -->
+
+    <div class="container">
+
+        <div class="booking-card">
+
+            <div class="bus-name">
+                <h3>Orange Travels</h3>
+                <span>AC Sleeper</span>
+            </div>
+
+            <hr>
+
+            <div class="journey">
+
+                <div class="from">
+                    <h2>Hyderabad</h2>
+                    <p>10:30 PM</p>
+                </div>
+
+                <div class="line">
+                    <i class="fa-solid fa-bus"></i>
+                </div>
+
+                <div class="to">
+                    <h2>Bangalore</h2>
+                    <p>07:15 AM</p>
+                </div>
+
+            </div>
+
+            <div class="date">
+                Journey Date : <b>25 July 2026</b>
+            </div>
+
+            <div class="seat">
+                Seat : U12
+            </div>
+
+            <div class="price">
+                ₹899
+            </div>
+
+            <div class="buttons">
+
+                <button class="book-btn">
+                    Book Again
+                </button>
+
+                <button class="details-btn"
+                    onclick="window.location.href='details.html'">
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+
+    <nav>
+
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-ticket"></i>
+            <span>Bookings</span>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </div>
+
+    </nav>
 
 </body>
 </html>
- 
