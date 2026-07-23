@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Details</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="top-bar">
+
+        <i class="fa-solid fa-arrow-left"
+           onclick="window.location.href='index.html'"></i>
+
+        <h2>Ticket Details</h2>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="ticket-card">
+
+        <div class="ticket-header">
+            <h2>Orange Travels</h2>
+            <p>AC Sleeper</p>
+        </div>
+
+        <div class="ticket-route">
+
+            <div>
+                <h3>Hyderabad</h3>
+                <p>10:30 PM</p>
+            </div>
+
+            <div class="route-icon">
+                <i class="fa-solid fa-bus"></i>
+            </div>
+
+            <div>
+                <h3>Bangalore</h3>
+                <p>07:15 AM</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="detail-row">
+            <span>Passenger</span>
+            <b>Jagadeesh</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Seat Number</span>
+            <b>U12</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Journey Date</span>
+            <b>25 July 2026</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Boarding</span>
+            <b>10:00 PM</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Dropping</span>
+            <b>07:15 AM</b>
+        </div>
+
+        <div class="detail-row">
+            <span>PNR</span>
+            <b>AB123456789</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Status</span>
+            <b style="color:green;">Confirmed</b>
+        </div>
+
+        <div class="detail-row">
+            <span>Amount Paid</span>
+            <b style="color:#0d6efd;">₹899</b>
+        </div>
+
+        <div class="qr-section">
+
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=Ticket12345"
+                 alt="QR Code">
+
+            <p>Show this QR Code while boarding</p>
+
+        </div>
+
+        <div class="action-buttons">
+
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i>
+                Download Ticket
+            </button>
+
+            <button class="share-btn">
+                <i class="fa-solid fa-share-nodes"></i>
+                Share Ticket
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
