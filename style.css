@@ -1,389 +1,460 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
 }
 
-body {
-    background: #f5f6fa;
-    color: #333;
-    min-height: 100vh;
-    padding-bottom: 90px;
+body{
+    background:#ffffff;
 }
 
-/* Header */
+/* ==========================
+   HEADER
+========================== */
 
-header {
-    background: #0d6efd;
-    color: white;
-    padding: 18px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
+.header{
 
-.top-bar {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+    background:#0b63f6;
 
-.top-bar i {
-    font-size: 22px;
-    cursor: pointer;
-}
-
-.top-bar h2 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-/* Tabs */
-
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.tabs button {
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 16px;
-    padding-bottom: 8px;
-    cursor: pointer;
-}
-
-.tabs button.active {
-    border-bottom: 3px solid white;
-    font-weight: bold;
-}
-
-/* Container */
-
-.container {
-    padding: 18px;
-}
-
-/* Booking Card */
-
-.booking-card {
-    background: white;
-    border-radius: 18px;
-    padding: 18px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-}
-
-.bus-name {
-    text-align: center;
-}
-
-.bus-name h3 {
-    color: #0d6efd;
-    font-size: 22px;
-}
-
-.bus-name span {
-    color: gray;
-    font-size: 14px;
-}
-
-.booking-card hr {
-    margin: 18px 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
-
-/* Journey */
-
-.journey {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.from,
-.to {
-    text-align: center;
-}
-
-.from h2,
-.to h2 {
-    font-size: 22px;
-}
-
-.from p,
-.to p {
-    color: gray;
-    margin-top: 6px;
-}
-
-.line {
-    color: #0d6efd;
-    font-size: 24px;
-}
-
-/* Journey Info */
-
-.date,
-.seat,
-.price {
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-.price {
-    font-size: 26px;
-    color: green;
-    font-weight: bold;
-}
-
-/* Buttons */
-
-.buttons {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.book-btn,
-.details-btn {
-    flex: 1;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.book-btn {
-    background: #28a745;
-    color: white;
-}
-
-.book-btn:hover {
-    background: #1f8b38;
-}
-
-.details-btn {
-    background: #0d6efd;
-    color: white;
-}
-
-.details-btn:hover {
-    background: #0056d2;
-}
-
-/* Bottom Navigation */
-
-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 14px 0;
-    box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
-}
-
-nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: gray;
-    cursor: pointer;
-}
-
-nav div i {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-nav div:hover {
-    color: #0d6efd;
-}
-
-/* Mobile */
-
-@media (max-width:600px){
-
-    .journey{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .buttons{
-        flex-direction:column;
-    }
-
-}
-/* =======================
-   Ticket Details Page
-==========================*/
-
-.ticket-card{
-
-    background:#fff;
-
-    border-radius:20px;
-
-    padding:20px;
-
-    margin-top:20px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-
-}
-
-.ticket-header{
-
-    text-align:center;
-
-}
-
-.ticket-header h2{
-
-    color:#0d6efd;
-
-    margin-bottom:5px;
-
-}
-
-.ticket-header p{
-
-    color:gray;
-
-}
-
-.ticket-route{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin:25px 0;
-
-}
-
-.route-icon{
-
-    color:#0d6efd;
-
-    font-size:28px;
-
-}
-
-.detail-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    padding:14px 0;
-
-    border-bottom:1px solid #ececec;
-
-    font-size:16px;
-
-}
-
-.qr-section{
-
-    margin-top:25px;
-
-    text-align:center;
-
-}
-
-.qr-section img{
-
-    width:170px;
-
-    height:170px;
-
-}
-
-.qr-section p{
-
-    margin-top:10px;
-
-    color:gray;
-
-}
-
-.action-buttons{
-
-    display:flex;
-
-    gap:12px;
-
-    margin-top:25px;
-
-}
-
-.download-btn,
-
-.share-btn{
-
-    flex:1;
-
-    padding:14px;
-
-    border:none;
-
-    border-radius:10px;
+    height:175px;
 
     color:#fff;
 
+    padding:28px 24px;
+
+}
+
+.top{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.back-btn{
+
+    width:52px;
+
+    height:52px;
+
+    border:2px solid rgba(255,255,255,.7);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
     cursor:pointer;
 
+}
+
+.back-btn span{
+
+    font-size:30px;
+
+}
+
+.top h1{
+
+    margin-left:28px;
+
+    font-size:28px;
+
+    font-weight:500;
+
+}
+
+.menu{
+
+    margin-left:auto;
+
+    font-size:36px!important;
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.title-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    margin-top:20px;
+
+}
+
+.title-row h2{
+
+    color:#d89a3f;
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+.refresh{
+
+    position:absolute;
+
+    right:22px;
+
+    color:#666;
+
+    font-size:32px!important;
+
+}
+
+/* ==========================
+   TICKET
+========================== */
+
+.ticket{
+
+    width:92%;
+
+    margin:22px auto;
+
+    background:#fff;
+
+    border:2px solid #31b45f;
+
+    border-radius:18px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   BADGE
+========================== */
+
+.badge{
+
+    display:inline-block;
+
+    margin:16px;
+
+    background:#efdaf9;
+
+    color:#b864dd;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   ROWS
+========================== */
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    margin-top:16px;
+
+}
+
+.label{
+
+    color:#b5b5b5;
+
+    font-size:18px;
+
+}
+
+.row h3{
+
+    margin-top:8px;
+
+    font-size:20px;
+
+    color:#222;
+
+    font-weight:500;
+
+}
+
+.station{
+
+    margin-top:34px;
+
+    margin-bottom:20px;
+
+}
+
+.station h2{
+
+    font-size:22px;
+
+    color:#222;
+
+    font-weight:500;
+
+}
+
+.right{
+
+    text-align:right;
+
+}
+
+/* ==========================
+   DOTTED LINE
+========================== */
+
+.dotted{
+
+    margin:18px 0;
+
+    border-top:2px dashed #bde9c7;
+
+}
+
+/* ==========================
+   CUTS
+========================== */
+
+.ticket-cut{
+
+    position:absolute;
+
+    width:34px;
+
+    height:34px;
+
+    background:#fff;
+
+    border:2px solid #31b45f;
+
+    border-radius:50%;
+
+    top:58%;
+
+}
+
+.ticket-cut.left{
+
+    left:-18px;
+
+}
+
+.ticket-cut.right{
+
+    right:-18px;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.actions{
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    height:72px;
+
+}
+
+.actions button{
+
+    background:none;
+
+    border:none;
+
+    color:#0b63f6;
+
+    font-size:22px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+}
+
+.divider{
+
+    width:2px;
+
+    height:36px;
+
+    background:#d8d8d8;
+
+}
+/* ==========================
+   BOTTOM NAVIGATION
+========================== */
+
+nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:95px;
+    background:#dff1ff;
+    border-top:2px solid #d0d0d0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    box-shadow:0 -2px 10px rgba(0,0,0,.12);
+}
+
+nav div{
+    width:70px;
+    height:70px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#7c7c7c;
+    cursor:pointer;
+}
+
+nav div span{
+    font-size:30px !important;
+}
+
+nav div p{
+    font-size:16px;
+    margin-top:5px;
+}
+
+nav .active{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+nav .active span,
+nav .active p{
+    color:#1565ff;
+}
+
+/* ==========================
+   BUTTON EFFECTS
+========================== */
+
+.book-btn:hover,
+.view-btn:hover{
+    color:#003cc8;
+}
+
+.book-btn:active,
+.view-btn:active{
+    transform:scale(.97);
+}
+
+/* ==========================
+   TICKET SHADOW
+========================== */
+
+.ticket{
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:480px){
+
+.header{
+    height:150px;
+    padding:20px;
+}
+
+.top h1{
+    font-size:22px;
+    margin-left:18px;
+}
+
+.back-btn{
+    width:45px;
+    height:45px;
+}
+
+.title-row h2{
+    font-size:20px;
+}
+
+.badge{
+    font-size:16px;
+    padding:8px 15px;
+}
+
+.label{
     font-size:15px;
-
 }
 
-.download-btn{
-
-    background:#28a745;
-
+.row h3{
+    font-size:17px;
 }
 
-.share-btn{
-
-    background:#0d6efd;
-
+.station h2{
+    font-size:18px;
 }
 
-.download-btn:hover{
-
-    background:#1f8b38;
-
+.actions button{
+    font-size:18px;
 }
 
-.share-btn:hover{
-
-    background:#0056d2;
-
+.ticket-cut{
+    width:28px;
+    height:28px;
 }
 
-@media(max-width:600px){
-
-.ticket-route{
-
-flex-direction:column;
-
-gap:20px;
-
+nav{
+    height:85px;
 }
 
-.action-buttons{
+nav div{
+    width:60px;
+    height:60px;
+}
 
-flex-direction:column;
+nav div span{
+    font-size:26px !important;
+}
 
+nav div p{
+    font-size:13px;
 }
 
 }
