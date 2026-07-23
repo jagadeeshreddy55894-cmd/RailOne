@@ -1,124 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Details</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Ticket Details</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body>
 
-<header>
+<header class="header">
 
-    <div class="top-bar">
+<div class="top">
 
-        <i class="fa-solid fa-arrow-left"
-           onclick="window.location.href='index.html'"></i>
+<div class="back-btn"
+onclick="window.location.href='index.html'">
 
-        <h2>Ticket Details</h2>
+<span class="material-icons">
+arrow_back
+</span>
 
-    </div>
+</div>
+
+<h1>Ticket Details</h1>
+
+<span class="material-icons menu">
+more_vert
+</span>
+
+</div>
 
 </header>
 
-<div class="container">
 
-    <div class="ticket-card">
+<div class="details-card">
 
-        <div class="ticket-header">
-            <h2>Orange Travels</h2>
-            <p>AC Sleeper</p>
-        </div>
+<div class="green-strip"></div>
 
-        <div class="ticket-route">
+<div class="status">
 
-            <div>
-                <h3>Hyderabad</h3>
-                <p>10:30 PM</p>
-            </div>
+Confirmed
 
-            <div class="route-icon">
-                <i class="fa-solid fa-bus"></i>
-            </div>
+</div>
 
-            <div>
-                <h3>Bangalore</h3>
-                <p>07:15 AM</p>
-            </div>
+<h2 class="train">
 
-        </div>
+11905 (Hoshiarpur Exp)
 
-        <hr>
+</h2>
 
-        <div class="detail-row">
-            <span>Passenger</span>
-            <b>Jagadeesh</b>
-        </div>
+<div class="route">
 
-        <div class="detail-row">
-            <span>Seat Number</span>
-            <b>U12</b>
-        </div>
+<div>
 
-        <div class="detail-row">
-            <span>Journey Date</span>
-            <b>25 July 2026</b>
-        </div>
+<p>From</p>
 
-        <div class="detail-row">
-            <span>Boarding</span>
-            <b>10:00 PM</b>
-        </div>
+<h3>AGRA CANTT</h3>
 
-        <div class="detail-row">
-            <span>Dropping</span>
-            <b>07:15 AM</b>
-        </div>
+</div>
 
-        <div class="detail-row">
-            <span>PNR</span>
-            <b>AB123456789</b>
-        </div>
+<div class="arrow">
 
-        <div class="detail-row">
-            <span>Status</span>
-            <b style="color:green;">Confirmed</b>
-        </div>
+<span class="material-icons">
 
-        <div class="detail-row">
-            <span>Amount Paid</span>
-            <b style="color:#0d6efd;">₹899</b>
-        </div>
+train
 
-        <div class="qr-section">
+</span>
 
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&data=Ticket12345"
-                 alt="QR Code">
+</div>
 
-            <p>Show this QR Code while boarding</p>
+<div>
 
-        </div>
+<p>To</p>
 
-        <div class="action-buttons">
+<h3>PHAGWARA</h3>
 
-            <button class="download-btn">
-                <i class="fa-solid fa-download"></i>
-                Download Ticket
-            </button>
+</div>
 
-            <button class="share-btn">
-                <i class="fa-solid fa-share-nodes"></i>
-                Share Ticket
-            </button>
+</div>
 
-        </div>
+<div class="detail">
 
-    </div>
+<span>Journey Date</span>
+
+<b>23 Jul 2026</b>
+
+</div>
+
+<div class="detail">
+
+<span>Class</span>
+
+<b>Second Sitting</b>
+
+</div>
+
+<div class="detail">
+
+<span>Passenger</span>
+
+<b>Jagadeesh Reddy</b>
+
+</div>
+
+<div class="detail">
+
+<span>Age</span>
+
+<b>21 Years</b>
+
+</div>
+
+<div class="detail">
+
+<span>Gender</span>
+
+<b>Male</b>
+
+</div>
+
+<div class="detail">
+
+<span>Coach</span>
+
+<b>General</b>
+
+</div>
+
+<div class="detail">
+
+<span>Fare</span>
+
+<b>₹120</b>
+
+</div>
+
+<div class="detail">
+
+<span>Booking Status</span>
+
+<b style="color:#1fa739">
+Confirmed
+</b>
+
+</div>
+
+<div class="qr">
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=IRCTC">
+
+</div>
+
+<div class="btns">
+
+<button>
+
+Download Ticket
+
+</button>
+
+<button>
+
+Share
+
+</button>
+
+</div>
 
 </div>
 
