@@ -3,205 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bookings</title>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+    <title>My Page</title>
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="stylish.css">
+   
 
-<meta name="theme-color" content="#1565F9">
-
-<meta name="mobile-web-app-capable" content="yes">
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
-
 <body>
 
-    <!-- Header -->
+<header class="topbar">
 
-    <header class="header">
+    <i class="fa-solid fa-bars menu"></i>
 
-        <div class="top">
+    <h2>Dashboard</h2>
 
-            <div class="back-btn">
-                <span class="material-icons">arrow_back</span>
-            </div>
-
-            <h1>My Bookings</h1>
-
-            <span class="material-icons menu">
-                sort
-            </span>
-
-        </div>
-
-    </header>
-
-
-    <!-- Upcoming -->
-
-    <div class="title-row">
-
-        <h2>Upcoming</h2>
-
-        <span class="material-icons refresh">
-            refresh
-        </span>
-
+    <div class="notify">
+        <i class="fa-regular fa-bell"></i>
+        <span>65</span>
     </div>
 
+</header>
 
-    <!-- Ticket -->
 
-    <div class="ticket">
+<section class="timetable">
 
-        <div class="badge">
-            Unreserved
+    <div class="head">
+        <h2>Today's Timetable</h2>
+        <button>Your Dost</button>
+    </div>
+
+    <div class="cards">
+
+        <div class="tt-card">
+            <h3>PEAS10</h3>
+            <p>37-801</p>
+
+            <div class="time">09-10 AM</div>
         </div>
 
+        <div class="tt-card">
+            <h3>CSES001</h3>
+            <p>26-507A</p>
 
-        <div class="row">
-
-            <div>
-
-                <p class="label">
-                    Train No.
-                </p>
-
-                <h3>
-                    11905 (Hoshiarpur Exp)
-                </h3>
-
-            </div>
-
-            <div class="right">
-
-                <p class="label">
-                    Journey Date
-                </p>
-
-                <h3>
-                    Thu, 23 Jul 26
-                </h3>
-
-            </div>
-
-        </div>
-
-
-        <div class="row station">
-
-            <div>
-
-                <h2>
-                    AGRA CANTT JN.
-                </h2>
-
-            </div>
-
-            <div class="right">
-
-                <h2>
-                    Phagwara JN.
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="dotted"></div>
-
-
-        <div class="ticket-cut left"></div>
-
-        <div class="ticket-cut right"></div>
-
-
-        <div class="actions">
-
-            <button class="book-btn">
-
-                Book Again
-
-            </button>
-
-
-            <div class="divider"></div>
-
-
-            <button class="view-btn"
-            onclick="window.location.href='details.html'">
-
-                View Details
-
-            </button>
-
+            <div class="time">10-11 AM</div>
         </div>
 
     </div>
 
+</section>
 
-    <!-- Bottom Navigation -->
 
-    <nav>
+<section class="tiles">
 
-        <div>
-
-            <span class="material-icons">
-                confirmation_number
-            </span>
-
-            <p>Upcoming</p>
-
-        </div>
+    <div class="title">
 
         <div>
-
-            <span class="material-icons">
-                confirmation_number
-            </span>
-
-            <p>Completed</p>
-
+            <h2>Add More Tiles</h2>
+            <p>Click on the plus button to add menu grids.</p>
         </div>
 
-        <div>
-
-            <span class="material-icons">
-                confirmation_number
-            </span>
-
-            <p>Cancelled</p>
-
+        <div class="plus">
+            <i class="fa-solid fa-plus"></i>
         </div>
 
-        <div class="active">
+    </div>
 
-            <span class="material-icons">
-                account_balance_wallet
-            </span>
+    <div class="grid">
 
-            <p>All</p>
-
+        <div class="tile">
+            <span class="badge">2</span>
+            <i class="fa-solid fa-bullhorn"></i>
+            <div>Announce</div>
         </div>
 
-    </nav>
-    <script>
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator.serviceWorker
-            .register("./service-worker.js")
-            .then(() => console.log("Service Worker Registered"))
-            .catch(err => console.log(err));
-    });
-}
-</script>
+        <div class="tile active">
+            <i class="fa-solid fa-laptop"></i>
+            <div>Edu Revolution</div>
+        </div>
 
-</body> 
+        <div class="tile">
+            <i class="fa-regular fa-credit-card"></i>
+            <div>Fee Statement</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">61%</span>
+            <i class="fa-regular fa-clipboard"></i>
+            <div>Attendance</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">0</span>
+            <i class="fa-solid fa-list-check"></i>
+            <div>Assignment</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">7.38</span>
+            <i class="fa-solid fa-chart-column"></i>
+            <div>Results</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">0</span>
+            <i class="fa-regular fa-file-lines"></i>
+            <div>Exams</div>
+        </div>
+
+        <div class="tile">
+            <i class="fa-regular fa-calendar"></i>
+            <div>RMS Status</div>
+        </div>
+
+        <div class="tile">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div>Events</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">X</span>
+            <i class="fa-solid fa-table"></i>
+            <div>View Marks</div>
+        </div>
+
+        <div class="tile">
+            <span class="badge">X</span>
+            <i class="fa-solid fa-table-cells"></i>
+            <div>Time table</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<nav class="bottom">
+
+    <div class="item active">
+        <i class="fa-solid fa-border-all"></i>
+        <p>Dashboard</p>
+    </div>
+
+    <div class="item">
+        <i class="fa-regular fa-newspaper"></i>
+        <p>Happenings</p>
+    </div>
+
+    <div class="item">
+        <i class="fa-regular fa-pen-to-square"></i>
+        <p>RMS</p>
+    </div>
+
+    <div class="item">
+        <i class="fa-solid fa-list"></i>
+        <p>View Marks</p>
+    </div>
+
+</nav>
+
+<script src="script.js"></script>
+
+</body>
 </html>
